@@ -1,0 +1,9 @@
+image:
+  repository: ghcr.io/xiliath/demoapp3.cronjob
+  tag: "0.0.1"
+  pullPolicy: IfNotPresent
+schedule: "0 0 * * *"
+env:
+  - name: TaskName
+    value: DailyCleanup
+resources: {}

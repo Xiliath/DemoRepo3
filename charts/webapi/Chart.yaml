@@ -1,0 +1,6 @@
+apiVersion: v2
+name: demoapp3-webapi
+description: A Helm chart for DemoApp3.WebApi
+type: application
+version: 0.0.1
+appVersion: 0.0.1

@@ -1,0 +1,13 @@
+apiVersion: v2
+name: demoapp3-umbrella
+description: Umbrella chart for deploying both Web API and CronJob
+type: application
+version: 0.0.1
+appVersion: 0.0.1
+dependencies:
+  - name: demoapp3-webapi
+    version: "0.0.1"
+    repository: "file://../webapi"
+  - name: demoapp3-cronjob
+    version: "0.0.1"
+    repository: "file://../cronjob"

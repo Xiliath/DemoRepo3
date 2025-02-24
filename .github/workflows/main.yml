@@ -112,3 +112,5 @@ jobs:
           git add .
           git commit -m "Bump version: Web API: ${{ steps.bump_webapi.outputs.new_version }} CronJob: ${{ steps.bump_cronjob.outputs.new_version }}"
           git push origin main
+        env:
+          GIT_AUTH_TOKEN: ${{ secrets.GHCR_PAT }}

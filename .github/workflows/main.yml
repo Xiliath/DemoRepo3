@@ -34,11 +34,7 @@ jobs:
       - name: Check for CronJob changes
         id: cronjob
         run: |
-          if git diff --quiet HEAD^ HEAD DemoApp3.CronJob; then
-            echo "::set-output name=changed::false"
-          else
-            echo "::set-output name=changed::true"
-          fi
+          echo "::set-output name=changed::true"
 
       # If Web API has changes, determine its new version
       - name: Determine new version for Web API
